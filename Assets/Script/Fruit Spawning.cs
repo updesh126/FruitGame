@@ -7,7 +7,6 @@ public class FruitSpawning : MonoBehaviour
     public Transform treeTransform; // Reference to the tree's Transform
     public float spawnInterval = 2.0f; // Adjust as needed
     private float timeSinceLastSpawn = 0.0f;
-    [SerializeField]
     
     private void Update()
     {
