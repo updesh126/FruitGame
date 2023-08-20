@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1455393135367849378}
-  - component: {fileID: 4740841884858416100}
-  - component: {fileID: 3816882360534863815}
-  - component: {fileID: 6997076619544192427}
+  - component: {fileID: 666146468992770728}
+  - component: {fileID: 3522820592604484383}
+  - component: {fileID: 8167543848652237306}
   m_Layer: 0
   m_Name: applePrefab
   m_TagString: Untagged
@@ -33,9 +33,9 @@ Transform:
   m_Children:
   - {fileID: 8115192025754654124}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &4740841884858416100
+--- !u!54 &666146468992770728
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -62,7 +62,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &3816882360534863815
+--- !u!65 &3522820592604484383
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -81,9 +81,9 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.4, y: 0.33379623, z: 0.4}
-  m_Center: {x: 0, y: 0.11033605, z: 0}
---- !u!114 &6997076619544192427
+  m_Size: {x: 0.13534355, y: 0.117492676, z: 0.12541628}
+  m_Center: {x: -0.01041317, y: 0.09498787, z: -0.0032413006}
+--- !u!114 &8167543848652237306
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -234,17 +234,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 683ce7b195eed4d4fb7b4b18a4fbdcef,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 683ce7b195eed4d4fb7b4b18a4fbdcef,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 683ce7b195eed4d4fb7b4b18a4fbdcef,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 683ce7b195eed4d4fb7b4b18a4fbdcef,
         type: 3}
