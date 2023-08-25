@@ -10,6 +10,8 @@ public class FruitSpawner : MonoBehaviour
     public float spawnRateIncreaseInterval = 10.0f; // Interval to increase spawn rate
     public float spawnRateIncreaseAmount = 0.2f; // Amount to increase spawn rate
 
+    public Transform[] spawnPositions; // Array of positions around the tree to spawn fruit
+
     private float currentSpawnRate;
 
     private void Start()
@@ -23,7 +25,9 @@ public class FruitSpawner : MonoBehaviour
     {
         while (true)
         {
-            Instantiate(fruitPrefab, treeTransform.position, Quaternion.identity);
+            int randomIndex = Random.Range(0, spawnPositions.Length);
+            Vector3 randomSpawnPosition = spawnPositions[randomIndex].position;
+            Instantiate(fruitPrefab, randomSpawnPosition, Quaternion.identity);
             yield return new WaitForSeconds(currentSpawnRate);
         }
     }
@@ -40,4 +44,5 @@ public class FruitSpawner : MonoBehaviour
             }
         }
     }
+
 }

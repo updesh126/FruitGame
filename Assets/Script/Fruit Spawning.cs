@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
@@ -5,7 +6,8 @@ public class FruitSpawning : MonoBehaviour
 {
     public GameObject fruitPrefab;
     public Transform treeTransform; 
-    public float spawnInterval = 2.0f; 
+    public float spawnInterval = 2.0f;
+    public float spawnRateIncreaseInterval = 10.0f;
     private float timeSinceLastSpawn = 0.0f;
     private Rigidbody rb; 
     
@@ -50,13 +52,18 @@ public class FruitSpawning : MonoBehaviour
 
         return spawnPosition;
     }
-    /*void OnTriggerEnter(Collider other)
+    
+
+    private IEnumerator IncreaseSpawnRate()
     {
-        if (other.CompareTag("Hand"))
+        while (true)
         {
-            rb.useGravity = true;
-            Debug.Log("Gravity Active");
+            yield return new WaitForSeconds(spawnRateIncreaseInterval);
+            spawnInterval -= spawnInterval;
+            if (spawnInterval < 0.1f) // Ensure spawn rate doesn't become too fast
+            {
+                spawnInterval = 0.1f;
+            }
         }
-        
-    }*/
+    }
 }
