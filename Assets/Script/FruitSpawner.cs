@@ -4,26 +4,40 @@ using UnityEngine;
 
 public class FruitSpawner : MonoBehaviour
 {
-    public GameObject fruitPrefab;
-    public float spawnInterval = 5f;
+    public GameObject fruitPrefab; // The prefab of the fruit to spawn
+    public Transform treeTransform; // The transform of the tree where the fruit will spawn
+    public float initialSpawnRate = 2.0f; // Initial spawn rate in seconds
+    public float spawnRateIncreaseInterval = 10.0f; // Interval to increase spawn rate
+    public float spawnRateIncreaseAmount = 0.2f; // Amount to increase spawn rate
+
+    private float currentSpawnRate;
 
     private void Start()
     {
-        StartCoroutine(SpawnFruits());
+        currentSpawnRate = initialSpawnRate;
+        StartCoroutine(SpawnFruit());
+        StartCoroutine(IncreaseSpawnRate());
     }
 
-    private IEnumerator SpawnFruits()
+    private IEnumerator SpawnFruit()
     {
         while (true)
         {
-            yield return new WaitForSeconds(spawnInterval);
+            Instantiate(fruitPrefab, treeTransform.position, Quaternion.identity);
+            yield return new WaitForSeconds(currentSpawnRate);
+        }
+    }
 
-            Vector3 spawnPosition = transform.position;
-            Quaternion spawnRotation = Quaternion.identity;
-            GameObject spawnedFruit = Instantiate(fruitPrefab, spawnPosition, spawnRotation);
-
-           // Rigidbody fruitRigidbody = spawnedFruit.GetComponent<Rigidbody>();
-           // fruitRigidbody.AddForce(Vector3.up * 5f, ForceMode.Impulse);
+    private IEnumerator IncreaseSpawnRate()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(spawnRateIncreaseInterval);
+            currentSpawnRate -= spawnRateIncreaseAmount;
+            if (currentSpawnRate < 0.1f) // Ensure spawn rate doesn't become too fast
+            {
+                currentSpawnRate = 0.1f;
+            }
         }
     }
 }
