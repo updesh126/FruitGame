@@ -520,6 +520,31 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 455227239}
+    - target: {fileID: 3745696233922275692, guid: 7613b38d9c5cb8849bec2b5e3225fe7f,
+        type: 3}
+      propertyPath: m_Height
+      value: 1.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745696233922275692, guid: 7613b38d9c5cb8849bec2b5e3225fe7f,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745696233922275692, guid: 7613b38d9c5cb8849bec2b5e3225fe7f,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745696233922275692, guid: 7613b38d9c5cb8849bec2b5e3225fe7f,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3745696233922275692, guid: 7613b38d9c5cb8849bec2b5e3225fe7f,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4174839549604488470, guid: 7613b38d9c5cb8849bec2b5e3225fe7f,
         type: 3}
       propertyPath: m_IsActive
@@ -1689,6 +1714,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Apple Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 2555421205737955325, guid: 15a5428930c4633479280d117ff0fdbe,
+        type: 3}
+      propertyPath: m_Height
+      value: 1.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2555421205737955325, guid: 15a5428930c4633479280d117ff0fdbe,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2555421205737955325, guid: 15a5428930c4633479280d117ff0fdbe,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2555421205737955325, guid: 15a5428930c4633479280d117ff0fdbe,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2555421205737955325, guid: 15a5428930c4633479280d117ff0fdbe,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4964341292338811352, guid: 15a5428930c4633479280d117ff0fdbe,
         type: 3}
@@ -2862,6 +2912,31 @@ PrefabInstance:
         type: 3}
       propertyPath: spawnInterval
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5642175905699216922, guid: b405c3661068a0145b46e5baa0011b6a,
+        type: 3}
+      propertyPath: m_Height
+      value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5642175905699216922, guid: b405c3661068a0145b46e5baa0011b6a,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 5642175905699216922, guid: b405c3661068a0145b46e5baa0011b6a,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5642175905699216922, guid: b405c3661068a0145b46e5baa0011b6a,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5642175905699216922, guid: b405c3661068a0145b46e5baa0011b6a,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6279633833343935049, guid: b405c3661068a0145b46e5baa0011b6a,
         type: 3}
