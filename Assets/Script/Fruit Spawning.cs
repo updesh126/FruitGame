@@ -7,25 +7,30 @@ public class FruitSpawning : MonoBehaviour
     public GameObject fruitPrefab;
     public Transform treeTransform; 
     public float spawnInterval = 2.0f;
-    public float spawnRateIncreaseInterval = 10.0f;
+    public float spawnRateIncreaseInterval = 30.0f;
     private float timeSinceLastSpawn = 0.0f;
+    private float spawnTime = 0.0f;
     private Rigidbody rb; 
     
 
     private void Start()
     {
+        SpawnFruit();
         rb = fruitPrefab.GetComponent<Rigidbody>();
+        rb.useGravity = false;
     }
     private void Update()
     {
         
         
         timeSinceLastSpawn += Time.deltaTime;
+        spawnTime += Time.deltaTime;
         if (timeSinceLastSpawn >= spawnInterval)
         {
             SpawnFruit();
             timeSinceLastSpawn = 0.1f; 
         }
+        
     }
 
     private void SpawnFruit()
@@ -59,7 +64,7 @@ public class FruitSpawning : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(spawnRateIncreaseInterval);
-            spawnInterval -= spawnInterval;
+            spawnInterval -= .1f;
             if (spawnInterval < 0.1f) // Ensure spawn rate doesn't become too fast
             {
                 spawnInterval = 0.1f;
