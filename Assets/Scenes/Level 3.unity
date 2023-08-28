@@ -568,7 +568,7 @@ PrefabInstance:
     - target: {fileID: 5884113857732709240, guid: 7613b38d9c5cb8849bec2b5e3225fe7f,
         type: 3}
       propertyPath: spawnRateIncreaseInterval
-      value: 30
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 8742165829397704795, guid: 7613b38d9c5cb8849bec2b5e3225fe7f,
         type: 3}
@@ -1763,7 +1763,7 @@ PrefabInstance:
     - target: {fileID: 4964341292338811352, guid: 15a5428930c4633479280d117ff0fdbe,
         type: 3}
       propertyPath: spawnRateIncreaseInterval
-      value: 30
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 5728606735085570586, guid: 15a5428930c4633479280d117ff0fdbe,
         type: 3}
@@ -2941,7 +2941,7 @@ PrefabInstance:
     - target: {fileID: 3991242504464189172, guid: b405c3661068a0145b46e5baa0011b6a,
         type: 3}
       propertyPath: spawnRateIncreaseInterval
-      value: 30
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 5642175905699216922, guid: b405c3661068a0145b46e5baa0011b6a,
         type: 3}
