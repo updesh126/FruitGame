@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Hand
   - Fruit
+  - Apple
+  - Orange
+  - Mango
   layers:
   - Default
   - TransparentFX

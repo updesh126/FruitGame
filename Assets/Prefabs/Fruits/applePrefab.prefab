@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8167543848652237306}
   m_Layer: 0
   m_Name: applePrefab
-  m_TagString: Fruit
+  m_TagString: Apple
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647

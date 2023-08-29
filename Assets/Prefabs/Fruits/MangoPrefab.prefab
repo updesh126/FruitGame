@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9008359700816620047}
   m_Layer: 0
   m_Name: MangoPrefab
-  m_TagString: Fruit
+  m_TagString: Mango
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
