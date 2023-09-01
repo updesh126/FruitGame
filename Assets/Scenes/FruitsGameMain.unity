@@ -7391,7 +7391,6 @@ GameObject:
   - component: {fileID: 6345907762420410792}
   - component: {fileID: 8796200489420308988}
   - component: {fileID: 8796200489420308989}
-  - component: {fileID: 8796200489420308990}
   m_Layer: 0
   m_Name: LeftHand Controller
   m_TagString: Hand
@@ -9059,8 +9058,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.1, y: 0.1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.17422651, y: 0.19386892, z: 0.27678883}
+  m_Center: {x: 0.042405196, y: -0.046934463, z: 0.038394406}
 --- !u!114 &8465273818908934092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9296,19 +9295,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.1, y: 0.1, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8796200489420308990
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6042653832982640747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e966f65bb9c8452498e5b80a8b67ce34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreSystem: {fileID: 840954616}
 --- !u!64 &8807058551675225312
 MeshCollider:
   m_ObjectHideFlags: 0

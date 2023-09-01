@@ -1,34 +1,55 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GravitySet : MonoBehaviour
 {
     [SerializeField] ScoreSystem scoreSystem;
+
+    bool isactive;
+    private void Start()
+    {
+        isactive = false;
+    }
+
     Rigidbody rb;
     void OnTriggerEnter(Collider other)
     {
-        
-        if (other.CompareTag( "Apple"))
+        if (!isactive && other.gameObject.tag =="Apple")
         {
-            Debug.Log("Collid");
-            rb =other.gameObject.GetComponent<Rigidbody>();
-            rb.useGravity = true;
+            //isactive = true;
+            Debug.Log("Collid A");
             scoreSystem.Apple();
-        }
-        else if (other.CompareTag( "Orange"))
-        {
-            Debug.Log("Collid");
             rb =other.gameObject.GetComponent<Rigidbody>();
             rb.useGravity = true;
+           
+
+        }
+        if (!isactive&& other.gameObject.tag == "Orange")
+        {
+            Debug.Log("Collid O");
             scoreSystem.Orange();
-        }
-        else if (other.CompareTag("Mango"))
-        {
-            Debug.Log("Collid");
             rb =other.gameObject.GetComponent<Rigidbody>();
             rb.useGravity = true;
-            scoreSystem.Mango();
+            //isactive = true;
         }
+        if (!isactive && other.gameObject.tag == "Mango")
+        {
+            Debug.Log("Collid M");
+            scoreSystem.Mango();
+            rb =other.gameObject.GetComponent<Rigidbody>();
+            rb.useGravity = true;
+            //isactive = true;
+        }
+        isactive = true;
+        /*else
+        {
+            Debug.Log("Nothing check tag");
+        }*/
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        isactive = false;
     }
 }
