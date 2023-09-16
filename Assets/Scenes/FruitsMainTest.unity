@@ -37,8 +37,8 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1491846, g: 0.35417044, b: 0.5083842, a: 1}
+  m_Sun: {fileID: 751883404}
+  m_IndirectSpecularColor: {r: 0.15303078, g: 0.35795987, b: 0.4910446, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,9 +97,9 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 7d8f0c29833557349ae47ea5b1f2a4dc,
+  m_LightingDataAsset: {fileID: 112000000, guid: 066cfb6f0cb9d7449b899af68f90e6e6,
     type: 2}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: 9c27d014a70b5c24b98a88f4ba0a2976,
+  m_LightingSettings: {fileID: 4890085278179872738, guid: e6154107ef37cb34abea4b2e707ec7c0,
     type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -1113,7 +1113,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 0, g: 0.8429804, b: 1, a: 1}
-  m_Intensity: 1.5
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1583,7 +1583,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.904832, b: 0.645283, a: 1}
-  m_Intensity: 1.5
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -2906,7 +2906,7 @@ GameObject:
   - component: {fileID: 1901409724}
   - component: {fileID: 1901409723}
   - component: {fileID: 1901409722}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
