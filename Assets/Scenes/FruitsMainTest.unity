@@ -3976,6 +3976,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1192677995988730038, guid: b405c3661068a0145b46e5baa0011b6a,
+        type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2370479384179589850, guid: b405c3661068a0145b46e5baa0011b6a,
         type: 3}
       propertyPath: m_InteractionManager
@@ -7608,8 +7613,8 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 5
   m_SortAtRoot: 0
---- !u!65 &8465273818908934091
-BoxCollider:
+--- !u!135 &8465273818908934091
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -7627,8 +7632,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.17422651, y: 0.061835572, z: 0.27678883}
-  m_Center: {x: 0.042405196, y: 0.019082211, z: 0.038394406}
+  m_Radius: 0.1
+  m_Center: {x: 0.06, y: -0.03, z: 0}
 --- !u!1 &8533441711493665507
 GameObject:
   m_ObjectHideFlags: 0
@@ -7778,8 +7783,8 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 5
   m_SortAtRoot: 0
---- !u!65 &8796200489420308989
-BoxCollider:
+--- !u!135 &8796200489420308989
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -7797,8 +7802,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.1, y: 0.1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.07366207
+  m_Center: {x: -0.028427199, y: -0.021815427, z: -3.229993e-10}
 --- !u!4 &8843666631621324887
 Transform:
   m_ObjectHideFlags: 0
